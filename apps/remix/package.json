@@ -3,7 +3,10 @@
   "name": "remix",
   "description": "",
   "license": "",
-  "scripts": {},
+  "scripts": {
+    "dev": "concurrently \" remix-serve build/index.js\" \"npm run sass\"",
+    "sass": "sass --watch app/:app/ --style=compressed --no-source-map"
+  },
   "type": "module",
   "dependencies": {
     "@remix-run/node": "^2.3.0",

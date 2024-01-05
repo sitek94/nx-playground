@@ -7,8 +7,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-
 import { cssBundleHref } from '@remix-run/css-bundle';
+
+import globalStyles from './styles/global.css';
 
 export const meta: MetaFunction = () => [
   {
@@ -19,10 +20,10 @@ export const meta: MetaFunction = () => [
 ];
 
 export const links: LinksFunction = () => [
-  // {
-  //   rel: 'stylesheet',
-  //   href: styles,
-  // },
+  {
+    rel: 'stylesheet',
+    href: globalStyles,
+  },
   ...(cssBundleHref ? [{ rel: 'stylesheet', href: cssBundleHref }] : []),
 ];
 
