@@ -31,7 +31,7 @@
       }
     },
     "storybook": {
-      "dependsOn": ["build"],
+      "dependsOn": ["^build"],
       "executor": "@nx/storybook:storybook",
       "options": {
         "port": 4400,

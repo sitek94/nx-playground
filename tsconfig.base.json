@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-playground/libs/ui": ["libs/ui/src/index.ts"],
-      "@nx-playground/libs/ui/server": ["libs/ui/src/server.ts"]
+      "@/libs/ui": ["libs/ui/src/index.ts"],
+      "@/libs/ui/server": ["libs/ui/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

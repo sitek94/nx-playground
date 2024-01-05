@@ -1,37 +1,21 @@
-import { Button } from '@nx-playground/libs/ui';
+import { Button } from '@/libs/ui';
 
 export default function Index() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1>Welcome to Remix 2</h1>
-      <Button>
-        Pretty cool button from <strong>libs/ui</strong>
-      </Button>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+      <h1>{`Welcome to Remix! (color of <h1> from libs/ui/styles)`}</h1>
+
+      <div style={{ display: 'flex', gap: '1rem' }}>
+        <Button>
+          DEFAULT button from <strong>libs/ui</strong>
+        </Button>
+        <Button color="primary">
+          PRIMARY button from <strong>libs/ui</strong>
+        </Button>
+        <Button color="secondary">
+          SECONDARY button from <strong>libs/ui</strong>
+        </Button>
+      </div>
     </div>
   );
 }
