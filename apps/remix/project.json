@@ -4,6 +4,7 @@
   "sourceRoot": "apps/remix",
   "projectType": "application",
   "tags": [],
+  "implicitDependencies": ["ui"],
   "targets": {
     "build": {
       "executor": "@nx/remix:build",

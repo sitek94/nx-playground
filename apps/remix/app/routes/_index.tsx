@@ -1,7 +1,14 @@
+
+
+import { Button } from '@nx-playground/libs/ui';
+
 export default function Index() {
   return (
-    <div style={{fontFamily: 'system-ui, sans-serif', lineHeight: '1.4'}}>
+    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
       <h1>Welcome to Remix</h1>
+      <Button>
+        Pretty cool button from <strong>libs/ui</strong>
+      </Button>
       <ul>
         <li>
           <a
@@ -28,5 +35,5 @@ export default function Index() {
         </li>
       </ul>
     </div>
-  )
+  );
 }
